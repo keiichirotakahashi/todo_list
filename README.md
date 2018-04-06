@@ -1,24 +1,36 @@
-# README
+# ToDoリストのWebアプリケーション
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 使用した技術要素
 
-Things you may want to cover:
+- Rubyバージョン
+	- 2.4.2
+	
 
-* Ruby version
+## 全体の設計・構成
 
-* System dependencies
 
-* Configuration
+## 開発環境のセットアップ手順
 
-* Database creation
+まずはリポジトリを手元にクローンしてください。
+その後、次のコマンドで必要になる RubyGems をインストールします。
+```
+$ bundle install --without production
+```
 
-* Database initialization
+その後、データベースへのマイグレーションを実行します。
 
-* How to run the test suite
+```
+$ rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+最後に、テストを実行してうまく動いているかどうか確認してください。
 
-* Deployment instructions
+```
+$ rails test
+```
 
-* ...
+テストが無事に通ったら、Railsサーバーを立ち上げる準備が整っているはずです。
+
+```
+$ rails server
+```
