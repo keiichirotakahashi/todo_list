@@ -1,0 +1,37 @@
+// ================================
+//             common
+// ================================
+
+$main_color: #fbf5e9;
+
+body {
+
+  background-color: $main_color;
+  .wrapper {
+
+    height: 100%;
+    width: 95%;
+    max-width: 1080px;
+    margin: 0 auto;
+  
+  }
+
+}
+
+
+
+// ================================
+//               sp
+// ================================
+
+@media screen and (max-width:479px) {
+
+}
+
+// ================================
+//               pc
+// ================================
+
+@media screen and (min-width:480px) {
+	
+}

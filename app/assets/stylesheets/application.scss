@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+@import "reset";
+@charset "utf-8";
+
+// definitions
+@import "variables";
+
+// Original Settings
+
+@import "common";
+@import "header";

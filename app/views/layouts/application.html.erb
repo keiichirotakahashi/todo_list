@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TodoList</title>
+    <title>ToDoリスト</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width">
   </head>
 
   <body>
-    <%= yield %>
+  	<header>
+  	  <div class="wrapper">
+  	    <div class="header-navi">
+  	  	  <!-- logo -->
+  	      <h1 class="header-logo">
+  	        <%= link_to "ToDoリスト", root_path %>
+  	      </h1>
+  	      <!-- search -->
+  	      <div class="header-search">
+  	        <%= link_to "検索", '#' %>
+  	      </div>
+        </div>
+  	  </div>
+  	</header>
+
+    <div class="main">
+      <div class="wrapper">
+        <%= yield %>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="wrapper">
+        <div class="footer-cover">
+          <!-- logo -->
+          <div class="footer-logo">ToDoリスト</div>
+          <!-- copyright -->
+          <div>Copyright &copy;2018 ToDoリスト. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
