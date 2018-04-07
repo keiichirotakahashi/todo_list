@@ -1,0 +1,78 @@
+// ================================
+//             footer
+// ================================
+
+$footer_color: #f9e3be;
+$purple_color: #474ba5;
+
+footer {
+  
+  background-color: $footer_color;
+
+}
+
+// ================================
+//               sp
+// ================================
+
+@media screen and (max-width:479px) {
+
+  footer {
+
+    .footer-cover {
+
+      text-align: center;
+      padding: 24px 0;
+      .footer-logo {
+
+        color: $purple_color;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 16px;
+
+      }
+      .copyright {
+
+        color: rgba(71, 75, 165, 0.6);
+        font-size: 12px;
+
+      }
+
+    }
+
+  }
+
+}
+
+// ================================
+//               pc
+// ================================
+
+@media screen and (min-width:480px) {
+  
+  footer {
+
+    .footer-cover {
+
+      text-align: center;
+      padding: 28px 0;
+      .footer-logo {
+
+        color: $purple_color;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 18px;
+
+      }
+      .copyright {
+
+        color: rgba(71, 75, 165, 0.6);
+        font-size: 14px;
+
+      }
+
+    }
+
+  }
+
+}

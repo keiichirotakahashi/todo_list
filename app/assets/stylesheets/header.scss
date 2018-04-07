@@ -6,6 +6,7 @@ $header_color: #fff0dc;
 $sub_color: #e4996d;
 
 header {
+
   background-color: $header_color;
 
 }
@@ -15,6 +16,34 @@ header {
 // ================================
 
 @media screen and (max-width:479px) {
+
+  header {
+
+    height: 50px;
+    .header-navi {
+
+      height: 100%;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1.header-logo, .header-search {
+
+        a {
+        
+          display: block;
+          height: 100%;
+          color: $sub_color;
+          font-size: 20px;
+          font-weight: 600;
+
+        }
+
+      }
+
+    }
+
+  }
 
 }
 
