@@ -1,3 +1,133 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ================================
+//       home/index (common)
+// ================================
+
+$sub_color: #e4996d;
+$red_color: #eb5a46;
+$blue_color: #0079bf;
+$white_color: #fff;
+$dark-gray: #666;
+
+.main {
+	
+}
+
+// ================================
+//         home/index (sp)
+// ================================
+
+@media screen and (max-width:479px) {
+  
+  .main {
+	
+  }
+
+}
+
+// ================================
+//         home/index (pc)
+// ================================
+
+@media screen and (min-width:480px) {
+
+  .main {
+	
+	.tasks {
+
+      padding: 28px 0 0 0;
+	  .task {
+
+        color: $dark-gray;
+	    background-color: $white_color;
+	    border-radius: 10px;
+	    padding: 20px 30px;
+	    margin-bottom: 20px;
+	    .task-name {
+
+	      margin-bottom: 8px;
+	      h2 {
+
+	        color: $dark-gray;
+	        font-size: 18px;
+	        font-weight: 500;
+
+	      }
+
+	    }
+        .task-flex {
+
+          display: -webkit-flex;
+          display: flex;
+          .flex-left {
+
+	        .due-date {
+
+	          display: -webkit-flex;
+	          display: flex;
+	          font-size: 18px;
+	          font-weight: 500;
+	          margin-bottom: 8px;
+
+	        }
+	        .created-at {
+
+	          display: -webkit-flex;
+	          display: flex;
+	          font-size: 18px;
+	          font-weight: 500;
+	    
+	        }
+
+	      }
+	      .flex-center {
+
+	        .link-button {
+
+	          height: 100%;
+	          background-color: $sub_color;
+	          border-radius: 10px;
+	          a {
+
+	            display: block;
+	            height: 100%;
+	            width: 200px;
+	            color: $white_color;
+
+	          }
+
+	        }
+
+	      }
+	      .flex-right {
+
+	        .status {
+
+	          height: 100%;
+	          border-radius: 10px;
+
+	        }
+	        .status-doing {
+
+	          background-color: $red_color;
+
+	        }
+	        .status-done {
+
+	          background-color: $blue_color;
+	        }
+
+	      }
+
+	    }
+
+	  }
+
+	}
+
+  }
+
+}
