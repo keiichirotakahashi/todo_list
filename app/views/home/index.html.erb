@@ -1,14 +1,43 @@
+<!-- ToDo追加フォーム -->
 <div class="form">
-  
+  <div class="form-name">
+    <h2>新しいToDoを作成する</h2>
+  </div>
+
+  <%= form_for(@task) do |f| %>
+    <div class="form-flex">
+      <div class="flex-left">
+        <div class="todo-name">
+          <div class="label">
+            ToDo名
+          </div>
+          <div class="textarea">
+            <%= f.text_field :name %>
+          </div>
+        </div>
+        <div class="due-date">
+          <div class="label">
+            期限
+          </div>
+          <div class="due-date">
+            <%= f.date_field :due_date %>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-right">
+        <%= f.submit "ToDoの追加", class: "submit-button" %>
+      </div>
+    </div>
+  <% end %>
 </div>
 
+<!-- ToDo一覧 -->
 <div class="tasks">
   <% @tasks.each do |task| %>
     <div class="task">
       <div class="task-name">
-        <h2>
-          <%= task.name %>
-        </h2>
+        <h2><%= task.name %></h2>
       </div>
       
       <div class="task-flex">
@@ -18,7 +47,7 @@
               期限：
             </div>
             <div class="date">
-              <%= task.due_date %>
+              <%= task.due_date.strftime("%Y年 %m月 %d日") %>
             </div>
           </div>
           <div class="created-at">
@@ -26,7 +55,7 @@
               作成日：
             </div>
             <div class="date">
-              <%= task.created_at %>
+              <%= task.created_at.strftime("%Y年 %m月 %d日") %>
             </div>
           </div>
         </div>

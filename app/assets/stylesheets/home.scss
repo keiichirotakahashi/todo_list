@@ -24,6 +24,122 @@ $dark-gray: #666;
   
   .main {
 	
+	padding: 28px 0;
+	.form {
+
+
+	}
+	.tasks {
+
+	  .task {
+
+        color: $dark-gray;
+	    background-color: $white_color;
+	    border-radius: 10px;
+	    padding: 20px 30px;
+	    margin-bottom: 20px;
+	    .task-name {
+
+	      margin-bottom: 8px;
+	      h2 {
+
+	        color: $dark-gray;
+	        font-size: 16px;
+	        font-weight: 500;
+
+	      }
+
+	    }
+        .task-flex {
+
+          .flex-left {
+
+	        .due-date {
+
+	          display: -webkit-flex;
+	          display: flex;
+	          font-size: 16px;
+	          font-weight: 500;
+	          margin-bottom: 8px;
+
+	        }
+	        .created-at {
+
+	          display: -webkit-flex;
+	          display: flex;
+	          font-size: 16px;
+	          font-weight: 500;
+	    
+	        }
+
+	      }
+	      .flex-right {
+
+	        display: -webkit-flex;
+	        display: flex;
+	        justify-content: space-between;
+	        a {
+
+	          display: block;
+	          height: 62px;
+              width: 45%;
+	          .link-button {
+
+                display: -webkit-flex;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+	            font-size: 16px;
+	            font-weight: 500;
+	            color: $white_color;
+	            background-color: $sub_color;
+	            border-radius: 10px;
+
+	          }
+
+	        }
+	        a {
+
+	          display: block;
+	          height: 62px;
+              width: 45%;
+              .status {
+
+	            display: -webkit-flex;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+	            font-size: 16px;
+	            font-weight: 500;
+	            color: $white_color;
+	            border-radius: 10px;
+
+	          }
+	          .status-doing {
+
+                background-color: $red_color;
+
+	          }
+	          .status-done {
+
+	            background-color: $blue_color;
+
+	          }
+
+	        }
+
+	      }
+
+	    }
+
+	  }
+
+	}
+
   }
 
 }
@@ -35,10 +151,53 @@ $dark-gray: #666;
 @media screen and (min-width:768px) {
 
   .main {
+
+    padding: 28px 0;
+    .form {
+
+      color: $dark-gray;
+	  background-color: $white_color;
+	  border-radius: 10px;
+      padding: 20px 30px;
+      margin-bottom: 28px;
+      .form-name {
+
+      }
+      .form-flex {
+
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        .flex-left {
+
+        }
+        .flex-right {
+
+          .submit-button {
+
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 62px;
+            width: 160px;
+            font-size: 18px;
+	        font-weight: 500;
+	        color: $white_color;
+	        background-color: $sub_color;
+	        border-style: none;
+	        border-radius: 10px;
+
+          }
+
+        }
+
+      }
+
+    }
 	
 	.tasks {
 
-      padding: 28px 0;
 	  .task {
 
         color: $dark-gray;
