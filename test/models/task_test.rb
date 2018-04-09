@@ -21,13 +21,13 @@ class TaskTest < ActiveSupport::TestCase
   	assert_not @task.valid?
   end
 
-  test "due_date should be present" do
-    @task.due_date = " "
+  test "name should not be too long" do
+    @task.name = "a" * 31
     assert_not @task.valid?
   end
 
-  test "name should not be too long" do
-    @task.name = "a" * 256
+  test "name should be unique" do
+    @task.name = "重複コンテンツ"
     assert_not @task.valid?
   end
 end

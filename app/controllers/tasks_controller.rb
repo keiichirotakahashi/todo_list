@@ -1,6 +1,14 @@
 class TasksController < ApplicationController
 
   def create
+    @tasks = Task.order('created_at DESC')
+    @task = Task.new(task_params)
+    @task.status = 0
+    if @task.save
+      redirect_to root_url
+    else
+      render 'home/index'
+    end
   end
 
   def edit
@@ -24,4 +32,10 @@ class TasksController < ApplicationController
 
   def search
   end
+
+  private
+
+    def task_params
+      params.require(:task).permit(:name, :due_date)
+    end
 end

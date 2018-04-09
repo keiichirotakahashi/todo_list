@@ -5,6 +5,7 @@
   </div>
 
   <%= form_for(@task) do |f| %>
+    <%= render 'shared/error_messages' %>
     <div class="form-flex">
       <div class="flex-left">
         <div class="todo-name">
@@ -12,15 +13,15 @@
             ToDo名
           </div>
           <div class="textarea">
-            <%= f.text_field :name %>
+            <%= f.text_field :name, class: "form-text" %>
           </div>
         </div>
         <div class="due-date">
           <div class="label">
             期限
           </div>
-          <div class="due-date">
-            <%= f.date_field :due_date %>
+          <div class="date-field">
+            <%= f.date_field :due_date, class: "form-date" %>
           </div>
         </div>
       </div>
