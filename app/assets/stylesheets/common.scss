@@ -6,25 +6,38 @@ $main_color: #fbf5e9;
 
 body {
 
-  background-color: $main_color;
-  .wrapper {
+  .main {
 
-    height: 100%;
-    width: 90%;
-    max-width: 1080px;
-    margin: 0 auto;
-  
+    background-color: $main_color;
+
   }
 
 }
 
+.wrapper {
 
+  height: 100%;
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+}
 
 // ================================
 //               sp
 // ================================
 
 @media screen and (max-width:767px) {
+
+  body {
+
+    .main {
+
+      min-height: 480px;
+  
+    }
+
+  }
 
 }
 
@@ -33,5 +46,15 @@ body {
 // ================================
 
 @media screen and (min-width:768px) {
-	
+
+  body {
+
+    .main {
+
+      min-height: 560px;
+
+    }
+
+  }
+
 }
