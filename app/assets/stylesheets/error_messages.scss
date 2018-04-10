@@ -10,7 +10,20 @@ $red_color: #eb5a46;
 
 @media screen and (max-width:767px) {
 
+  .error-messages {
+    
+    margin-bottom: 12px;
+    ul {
 
+      li {
+
+        color: $red_color;
+
+      }
+
+    }
+    
+  }
 
 }
 

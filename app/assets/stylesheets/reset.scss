@@ -15,3 +15,20 @@ table,tr,th,td{margin:0;padding:0;border-spacing:0!important;}
 .align-left{text-align: left;}
 .align-right{text-align: right;}
 .center{text-align:center;}
+
+/* iOSでのデフォルトスタイルをリセット */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box; 
+  &::-webkit-search-decoration {
+    display: none;
+  }
+  &::focus {
+    outline-offset: -2px;
+  }
+}

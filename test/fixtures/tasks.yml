@@ -2,3 +2,13 @@ one:
   name: "重複コンテンツ"
   status: 0
   due_date: 2018-04-08 16:32:28
+
+two:
+  name: "2つ目のコンテンツ"
+  status: 0
+  due_date: 2018-04-09 16:32:28
+
+three:
+  name: "3つ目のコンテンツ"
+  status: 0
+  due_date: 2018-04-10 16:32:28

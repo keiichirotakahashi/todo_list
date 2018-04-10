@@ -11,7 +11,6 @@ $red_color: #eb5a46;
 $blue_color: #0079bf;
 $white_color: #fff;
 $dark-gray: #666;
-$light-gray: #dbdbdb;
 
 .main {
 	
@@ -41,96 +40,6 @@ $light-gray: #dbdbdb;
           color: $dark-gray;
 	      font-size: 18px;
 	      font-weight: 500;
-
-        }
-
-      }
-      .form-flex {
-
-        //display: -webkit-flex;
-        //display: flex;
-        //justify-content: space-between;
-        .flex-left {
-
-          .todo-name {
-
-            display: -webkit-flex;
-            display: flex;
-            font-size: 16px;
-	        font-weight: 500;
-	        margin-bottom: 12px;
-	        .label {
-
-              text-align: center;
-	          width: 88px;
-	          font-size: 18px;
-	          font-weight: 500;
-
-	        }
-	        .textarea {
-
-	          .form-text {
-
-	            font-size: 16px;
-	            border: solid 1px $light-gray;
-	            border-radius: 5px;
-	            padding: 4px 10px;
-
-	          }
-
-	        }
-
-          }
-
-          .due-date {
-
-            display: -webkit-flex;
-            display: flex;
-            font-size: 16px;
-	        font-weight: 500;
-	        .label {
-
-              text-align: center;
-	          width: 88px;
-	          font-size: 16px;
-	          font-weight: 500;
-
-	        }
-
-	        .date-field {
-
-	          .form-date{
-
-	            font-size: 12px;
-	            border: solid 1px $light-gray;
-	            border-radius: 5px;
-	            padding: 4px 10px;
-
-	          }
-
-	        }
-
-          }
-
-        }
-        .flex-right {
-
-          .submit-button {
-
-            display: -webkit-flex;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 62px;
-            width: 100%;
-            font-size: 18px;
-	        font-weight: 500;
-	        color: $white_color;
-	        background-color: $sub_color;
-	        border-style: none;
-	        border-radius: 10px;
-
-          }
 
         }
 
@@ -296,99 +205,6 @@ $light-gray: #dbdbdb;
           color: $dark-gray;
 	      font-size: 20px;
 	      font-weight: 500;
-
-        }
-
-      }
-      .form-flex {
-
-        display: -webkit-flex;
-        display: flex;
-        justify-content: space-between;
-        .flex-left {
-
-          .todo-name {
-
-            display: -webkit-flex;
-            display: flex;
-            font-size: 18px;
-	        font-weight: 500;
-	        margin-bottom: 12px;
-	        .label {
-
-              text-align: center;
-	          width: 88px;
-	          font-size: 18px;
-	          font-weight: 500;
-
-	        }
-	        .textarea {
-
-	          .form-text {
-
-	            font-size: 18px;
-	            border: solid 1px $light-gray;
-	            border-radius: 5px;
-	            padding: 4px 10px;
-
-	          }
-
-	        }
-
-          }
-
-          .due-date {
-
-            display: -webkit-flex;
-            display: flex;
-            font-size: 18px;
-	        font-weight: 500;
-	        .label {
-
-              text-align: center;
-	          width: 88px;
-	          font-size: 18px;
-	          font-weight: 500;
-
-	        }
-
-	        .date-field {
-
-	          .form-date{
-
-	            font-size: 12px;
-	            border: solid 1px $light-gray;
-	            border-radius: 5px;
-	            padding: 4px 10px;
-
-	          }
-
-	        }
-
-          }
-
-        }
-        .flex-right {
-
-          display: -webkit-flex;
-          display: flex;
-          align-items: flex-end;
-          .submit-button {
-
-            display: -webkit-flex;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 62px;
-            width: 160px;
-            font-size: 18px;
-	        font-weight: 500;
-	        color: $white_color;
-	        background-color: $sub_color;
-	        border-style: none;
-	        border-radius: 10px;
-
-          }
 
         }
 

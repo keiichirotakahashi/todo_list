@@ -1,1 +1,11 @@
-<% provide(title: "ToDoの編集") %>
+<% provide(:title, "ToDoの編集") %>
+<% provide(:button_text, "更新") %>
+<!-- ToDo編集フォーム -->
+<div class="form">
+  <div class="form-name">
+    <h2>ToDoの内容を変更する</h2>
+  </div>
+
+  <!-- ToDo追加フォームのパーシャル -->
+  <%= render 'form' %>
+</div>
