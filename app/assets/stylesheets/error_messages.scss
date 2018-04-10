@@ -1,0 +1,40 @@
+// ================================
+//     error_messages (common)
+// ================================
+
+$red_color: #eb5a46;
+
+// ================================
+//        error_messages (sp)
+// ================================
+
+@media screen and (max-width:767px) {
+
+
+
+}
+
+
+
+// ================================
+//        error_messages (pc)
+// ================================
+
+@media screen and (min-width:768px) {
+  
+  .error-messages {
+    
+    margin-bottom: 12px;
+    ul {
+
+      li {
+
+        color: $red_color;
+
+      }
+
+    }
+    
+  }
+
+}

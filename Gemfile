@@ -13,6 +13,9 @@ gem 'coffee-rails', '4.2.2'
 gem 'turbolinks', '5.1.0'
 gem 'jbuilder', '2.7.0'
 
+# rails-i18n（国際化）
+gem 'rails-i18n'
+
 group :development, :test do
   gem 'sqlite3', '1.3.13'
   gem 'byebug', '10.0.2', platforms: [:mri, :mingw, :x64_mingw]

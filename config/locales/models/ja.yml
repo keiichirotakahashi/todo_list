@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      task: タスク
+    attributes:
+      task:
+        name: ToDo名
+        status: ステータス
+        due_date: 期限
