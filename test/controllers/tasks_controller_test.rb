@@ -12,4 +12,10 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "ToDoの編集 | #{@base_title}"
   end
+
+  test "should get search" do
+    get search_path
+    assert_response :success
+    assert_select "title", "ToDoの検索 | #{@base_title}"
+  end
 end

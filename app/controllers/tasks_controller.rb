@@ -38,6 +38,11 @@ class TasksController < ApplicationController
   end
 
   def search
+    if params[:q]
+      @tasks = Task.where(status: 0).search(params[:q])
+    else
+      @tasks = []
+    end
   end
 
   private
