@@ -16,6 +16,7 @@ $light-gray: #dbdbdb;
 
     .flex-left {
 
+      margin-bottom: 12px;
       .todo-name {
 
         display: -webkit-flex;
@@ -26,14 +27,14 @@ $light-gray: #dbdbdb;
         .label {
 
           text-align: center;
-	      width: 88px;
-	      font-size: 18px;
+	        width: 88px;
+	        font-size: 16px;
           font-weight: 500;
 
-	    }
-	    .textarea {
+	      }
+	      .textarea {
 
-	      .form-text {
+	        .form-text {
 
             font-size: 16px;
             border: solid 1px $light-gray;
@@ -84,11 +85,11 @@ $light-gray: #dbdbdb;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 62px;
+        height: 40px;
         width: 100%;
         font-size: 18px;
-	    font-weight: 500;
-	    color: $white_color;
+	      font-weight: 500;
+	      color: $white_color;
         background-color: $sub_color;
         border-style: none;
         border-radius: 10px;
@@ -111,28 +112,33 @@ $light-gray: #dbdbdb;
 
     display: -webkit-flex;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     .flex-left {
 
+      width: 100%;
       .todo-name {
 
+        width: 100%;
         display: -webkit-flex;
         display: flex;
         font-size: 18px;
         font-weight: 500;
-	    margin-bottom: 12px;
-	    .label {
+	      margin-bottom: 12px;
+	      .label {
 
           text-align: center;
-	      width: 88px;
+	        min-width: 88px;
           font-size: 18px;
           font-weight: 500;
 
-	    }
+	      }
         .textarea {
 
+          width: 100%;
           .form-text {
 
+            width: 96%;
+            max-width: 560px;
             font-size: 18px;
             border: solid 1px $light-gray;
             border-radius: 5px;
@@ -143,7 +149,6 @@ $light-gray: #dbdbdb;
         }
 
       }
-
       .due-date {
 
         display: -webkit-flex;
@@ -153,12 +158,11 @@ $light-gray: #dbdbdb;
         .label {
 
           text-align: center;
-          width: 88px;
+          min-width: 88px;
           font-size: 18px;
           font-weight: 500;
 
         }
-
         .date-field {
 
           .form-date{
@@ -180,6 +184,7 @@ $light-gray: #dbdbdb;
       display: -webkit-flex;
       display: flex;
       align-items: flex-end;
+      margin-left: 30px;
       .submit-button {
 
         display: -webkit-flex;

@@ -29,6 +29,8 @@ header {
       align-items: center;
       h1.header-logo, .header-search {
 
+        font-size: 20px;
+        font-weight: 600;
         a {
         
           display: block;
@@ -65,7 +67,9 @@ header {
       align-items: center;
       h1.header-logo, .header-search {
 
-        a {
+        font-size: 24px;
+        font-weight: 600;
+          a {
         
           display: block;
           height: 100%;

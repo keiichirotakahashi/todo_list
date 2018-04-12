@@ -1,3 +1,164 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// ================================
+//       tasks/search (common)
+// ================================
+
+$sub_color: #e4996d;
+$red_color: #eb5a46;
+$white_color: #fff;
+$light-gray: #dbdbdb;
+
+// ================================
+//        tasks/search (sp)
+// ================================
+
+@media screen and (max-width:767px) {
+
+  .main {
+
+    .search {
+
+      background-color: $white_color;
+	    border-radius: 10px;
+	    padding: 20px 5%;
+	    margin-bottom: 20px;
+      form {
+
+        //display: -webkit-flex;
+        //display: flex;
+        //justify-content: center;
+        .textarea {
+
+          width: 100%;
+          .form-text {
+
+            width: 90%;
+            font-size: 16px;
+            border: solid 1px $light-gray;
+            border-radius: 5px;
+            padding: 8px 4.5%;
+            margin: 0 auto 12px;
+
+          }
+
+        }
+        .submit {
+
+          //margin-left: 30px;
+          width: 100%;
+          .submit-button {
+
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 100%;
+            font-size: 16px;
+	          font-weight: 500;
+	          color: $white_color;
+            background-color: $sub_color;
+            border-style: none;
+            border-radius: 10px;
+
+          }
+
+        }
+
+      }
+
+    }
+    .tasks {
+
+      .search-result {
+
+        font-size: 16px;
+        font-weight: 500;
+        color: $red_color;
+        margin-bottom: 20px;
+      
+      }
+
+    }
+
+  }
+
+}
+
+// ================================
+//        tasks/search (pc)
+// ================================
+
+@media screen and (min-width:768px) {
+
+  .main {
+
+    .search {
+
+      background-color: $white_color;
+	  border-radius: 10px;
+	  padding: 20px 30px;
+	  margin-bottom: 20px;
+      form {
+
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        .textarea {
+
+          width: 100%;
+          .form-text {
+
+            width: 97%;
+            font-size: 18px;
+            border: solid 1px $light-gray;
+            border-radius: 5px;
+            padding: 8px 10px;
+
+          }
+
+        }
+        .submit {
+
+          margin-left: 30px;
+          .submit-button {
+
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 160px;
+            font-size: 18px;
+	        font-weight: 500;
+	        color: $white_color;
+            background-color: $sub_color;
+            border-style: none;
+            border-radius: 10px;
+
+          }
+
+        }
+
+      }
+
+    }
+    .tasks {
+
+      .search-result {
+
+        font-size: 18px;
+        font-weight: 500;
+        color: $red_color;
+        margin-bottom: 20px;
+      
+      }
+
+    }
+
+  }
+
+}
