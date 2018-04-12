@@ -16,7 +16,7 @@ $light-gray: #dbdbdb;
 
     .flex-left {
 
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       .todo-name {
 
         display: -webkit-flex;
@@ -27,19 +27,21 @@ $light-gray: #dbdbdb;
         .label {
 
           text-align: center;
-	        width: 88px;
+	        min-width: 88px;
 	        font-size: 16px;
           font-weight: 500;
 
 	      }
 	      .textarea {
 
-	        .form-text {
+	        width: 100%;
+          .form-text {
 
+            width: 90%;
             font-size: 16px;
             border: solid 1px $light-gray;
             border-radius: 5px;
-            padding: 4px 10px;
+            padding: 6px 4.5%;
 
           }
 
@@ -55,7 +57,7 @@ $light-gray: #dbdbdb;
         .label {
 
           text-align: center;
-          width: 88px;
+          min-width: 88px;
           font-size: 16px;
           font-weight: 500;
 
@@ -68,7 +70,7 @@ $light-gray: #dbdbdb;
             font-size: 12px;
             border: solid 1px $light-gray;
             border-radius: 5px;
-            padding: 4px 10px;
+            padding: 6px 10px;
 
           }
 

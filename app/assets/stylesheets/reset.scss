@@ -32,3 +32,11 @@ input[type="button"] {
     outline-offset: -2px;
   }
 }
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}

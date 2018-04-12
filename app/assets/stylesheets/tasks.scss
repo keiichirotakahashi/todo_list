@@ -27,9 +27,6 @@ $light-gray: #dbdbdb;
 	    margin-bottom: 20px;
       form {
 
-        //display: -webkit-flex;
-        //display: flex;
-        //justify-content: center;
         .textarea {
 
           width: 100%;
@@ -47,7 +44,6 @@ $light-gray: #dbdbdb;
         }
         .submit {
 
-          //margin-left: 30px;
           width: 100%;
           .submit-button {
 
@@ -99,9 +95,9 @@ $light-gray: #dbdbdb;
     .search {
 
       background-color: $white_color;
-	  border-radius: 10px;
-	  padding: 20px 30px;
-	  margin-bottom: 20px;
+	    border-radius: 10px;
+	    padding: 20px 30px;
+	    margin-bottom: 20px;
       form {
 
         display: -webkit-flex;
@@ -133,8 +129,8 @@ $light-gray: #dbdbdb;
             height: 40px;
             width: 160px;
             font-size: 18px;
-	        font-weight: 500;
-	        color: $white_color;
+	          font-weight: 500;
+	          color: $white_color;
             background-color: $sub_color;
             border-style: none;
             border-radius: 10px;
