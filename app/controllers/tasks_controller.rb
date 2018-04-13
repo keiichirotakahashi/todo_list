@@ -24,6 +24,11 @@ class TasksController < ApplicationController
     end
   end
 
+  def destroy
+    Task.find(params[:id]).destroy
+    redirect_to root_url
+  end
+
   def status
     @task = Task.find(params[:id])
     # statusを変更する

@@ -267,6 +267,7 @@ body {
             justify-content: space-between;
             .flex-left {
 
+              min-width: 234px;
               .due-date {
 
                 display: -webkit-flex;
@@ -310,34 +311,48 @@ body {
 
               display: -webkit-flex;
               display: flex;
-              .link-button {
+              justify-content: end;
+              width: 100%;
+              max-width: 570px;
+              a {
 
-                display: -webkit-flex;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 62px;
-                width: 160px;
-                font-size: 18px;
-                font-weight: 500;
-                color: $white_color;
-                background-color: $sub_color;
-                border-radius: 10px;
+                width: 30%;
+                margin-left: 30px;
+                .link-button {
+
+                  display: -webkit-flex;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 62px;
+                  max-width: 160px;
+                  font-size: 18px;
+                  font-weight: 500;
+                  color: $white_color;
+                  background-color: $sub_color;
+                  border-radius: 10px;                
+
+                }
 
               }
-              .status {
+              a {
 
-                display: -webkit-flex;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 62px;
-                width: 160px;
-                font-size: 18px;
-                font-weight: 500;
-                color: $white_color;
-                border-radius: 10px;
+                width: 30%;
                 margin-left: 30px;
+                .status {
+
+                  display: -webkit-flex;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  height: 62px;
+                  max-width: 160px;
+                  font-size: 18px;
+                  font-weight: 500;
+                  color: $white_color;
+                  border-radius: 10px;                
+
+                }
 
               }
               .status-doing {

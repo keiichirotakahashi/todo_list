@@ -12,55 +12,7 @@
 <!-- ToDo一覧 -->
 <div class="tasks">
   <% if @tasks.any? %>
-    <% @tasks.each do |task| %>
-      <div class="task">
-        <div class="task-name">
-          <h2><%= task.name %></h2>
-        </div>
-      
-        <div class="task-flex">
-          <div class="flex-left">
-            <div class="due-date">
-              <div class="label">
-                期限：
-              </div>
-              <div class="date">
-                <%= task.due_date.strftime("%Y年 %m月 %d日") %>
-              </div>
-            </div>
-            <div class="created-at">
-              <div class="label">
-                作成日：
-              </div>
-              <div class="date">
-                <%= task.created_at.strftime("%Y年 %m月 %d日") %>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-right">
-            <!-- 編集ボタン -->
-            <%= link_to edit_task_path(task.id) do %>
-              <div class="link-button">
-                編集
-              </div>
-            <% end %>
-            <!-- ステータスボタン -->
-            <%= link_to status_task_path(task.id), method: :post do %>
-              <% if task.status == 0 %>
-                <div class="status status-doing">
-      	          未完了
-                </div>
-              <% elsif task.status == 1 %>
-                <div class="status status-done">
-                  完了
-                </div>
-              <% end %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    <% end %>
+    <%= render @tasks %>
   <% else %>
     <div class="no-task">
       登録されたToDoはありません
