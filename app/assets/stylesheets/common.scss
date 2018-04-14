@@ -128,62 +128,71 @@ body {
             }
             .flex-right {
 
-              display: -webkit-flex;
-              display: flex;
-              justify-content: space-between;
-              a {
+              .task-buttons {
 
-                display: block;
-                height: 40px;
-                width: 47%;
-                .link-button {
+                display: -webkit-flex;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 12px;
+                a {
 
-                  display: -webkit-flex;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  height: 100%;
-                  width: 100%;
-                  font-size: 16px;
-                  font-weight: 500;
-                  color: $white_color;
-                  background-color: $sub_color;
-                  border-radius: 10px;
+                  display: block;
+                  height: 40px;
+                  width: 47%;
+                  .link-button {
 
-                }
+                    display: -webkit-flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $white_color;
+                    background-color: $sub_color;
+                    border-radius: 10px;
 
-              }
-              a {
-
-                display: block;
-                height: 40px;
-                width: 47%;
-                .status {
-
-                  display: -webkit-flex;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  height: 100%;
-                  width: 100%;
-                  font-size: 16px;
-                  font-weight: 500;
-                  color: $white_color;
-                  border-radius: 10px;
-
-                }
-                .status-doing {
-
-                  background-color: $red_color;
-
-                }
-                .status-done {
-
-                  background-color: $blue_color;
+                  }
 
                 }
 
               }
+              .status-button {
+
+                a {
+
+                  display: block;
+                  height: 40px;
+                  width: 100%;
+                  .status {
+
+                    display: -webkit-flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $white_color;
+                    border-radius: 10px;
+
+                  }
+                  .status-doing {
+
+                    background-color: $red_color;
+
+                  }
+                  .status-done {
+
+                    background-color: $blue_color;
+
+                  }
+
+                }
+
+              }  
 
             }
 
@@ -314,57 +323,74 @@ body {
               justify-content: end;
               width: 100%;
               max-width: 570px;
-              a {
+              .task-buttons {
 
-                width: 30%;
-                margin-left: 30px;
-                .link-button {
+                display: -webkit-flex;
+                display: flex;
+                width: 66%;
+                max-width: 380px;
+                a {
 
-                  display: -webkit-flex;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  height: 62px;
-                  max-width: 160px;
-                  font-size: 18px;
-                  font-weight: 500;
-                  color: $white_color;
-                  background-color: $sub_color;
-                  border-radius: 10px;                
+                  width: 50%;
+                  margin-left: 30px;
+                  .link-button {
 
-                }
+                    display: -webkit-flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 62px;
+                    max-width: 160px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $white_color;
+                    background-color: $sub_color;
+                    border-radius: 10px;                
 
-              }
-              a {
-
-                width: 30%;
-                margin-left: 30px;
-                .status {
-
-                  display: -webkit-flex;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  height: 62px;
-                  max-width: 160px;
-                  font-size: 18px;
-                  font-weight: 500;
-                  color: $white_color;
-                  border-radius: 10px;                
+                  }
 
                 }
 
               }
-              .status-doing {
+              .status-button {
 
-                background-color: $red_color;
+                display: -webkit-flex;
+                display: flex;
+                justify-content: end;
+                width: 33%;
+                max-width: 190px;
+                a {
 
-              }
-              .status-done {
+                  width: 100%;
+                  margin-left: 30px;
+                  .status {
 
-                background-color: $blue_color;
+                    display: -webkit-flex;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 62px;
+                    max-width: 160px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $white_color;
+                    border-radius: 10px;                
 
-              }
+                  }
+                  .status-doing {
+
+                    background-color: $red_color;
+
+                  }
+                  .status-done {
+
+                    background-color: $blue_color;
+
+                  }
+
+                }
+
+              } 
 
             }
 
