@@ -44,7 +44,7 @@ class TasksController < ApplicationController
 
   def search
     if params[:q]
-      @tasks = Task.where(status: 0).search(params[:q])
+      @tasks = Task.search(params[:q]).order('created_at DESC')
     else
       @tasks = []
     end

@@ -1,0 +1,16 @@
+<header>
+  <div class="wrapper">
+    <div class="header-navi">
+  	  <!-- logo -->
+      <h1 class="header-logo">
+        <%= link_to "ToDoリスト", root_path %>
+      </h1>
+      <!-- search -->
+      <% unless yield(:title) == "ToDoの検索" %>
+        <div class="header-search">
+          <%= link_to "検索", search_path %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</header>

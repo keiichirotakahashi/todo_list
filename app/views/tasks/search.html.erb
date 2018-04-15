@@ -13,16 +13,16 @@
 
 <!-- 検索結果一覧 -->
 <% if params[:q] %>
-<div class="tasks">
-  <% if @tasks.any? %>
-    <div class="search-result">
-      ToDoが<%= @tasks.count %>件見つかりました
-    </div>
-    <%= render @tasks %>
-  <% else %>
-    <div class="no-task">
-      対象のToDoは見つかりません
-    </div>
-  <% end %>
-</div>
+  <div class="tasks">
+    <% if @tasks.any? %>
+      <div class="search-result">
+        ToDoが<%= @tasks.count %>件見つかりました
+      </div>
+      <%= render @tasks %>
+    <% else %>
+      <div class="no-task">
+        対象のToDoは見つかりません
+      </div>
+    <% end %>
+  </div>
 <% end %>
