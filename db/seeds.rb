@@ -8,7 +8,8 @@
 require "csv"
 
 if File.exist?('db/sample_data.csv') == true
-  CSV.foreach('db/sample_data.csv') do |row|
+  csv_data = CSV.read('db/sample_data.csv', headers: true)
+  csv_data.each do |row|
     Task.find_or_create_by(:id => row[0], :name => row[1], :status => row[2],
     	        :due_date => row[3], :created_at => row[4], :updated_at => row[5])
   end
