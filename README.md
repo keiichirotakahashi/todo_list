@@ -41,6 +41,7 @@ updated_at  :datetime    not null
 まずはリポジトリを手元にクローンしてください。
 ```
 $ git clone https://github.com/keiichirotakahashi/todo_list.git
+$ cd todo_list
 ```
 
 その後、次のコマンドで必要になる RubyGems をインストールします。
@@ -48,10 +49,11 @@ $ git clone https://github.com/keiichirotakahashi/todo_list.git
 $ bundle install --without production
 ```
 
-その後、データベースへのマイグレーションを実行します。
+その後、データベースへのマイグレーションを実行しサンプルデータを追加します。
 
 ```
 $ rails db:migrate
+$ rails db:seed
 ```
 
 最後に、テストを実行してうまく動いているかどうか確認してください。
