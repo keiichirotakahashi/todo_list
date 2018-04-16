@@ -10,7 +10,11 @@
           期限：
         </div>
         <div class="date">
-          <%= task.due_date.strftime("%Y年 %m月 %d日") %>
+          <% if task.due_date.present? %>
+            <%= task.due_date.strftime("%Y年 %m月 %d日") %>
+          <% else %>
+            指定なし
+          <% end %>
         </div>
       </div>
       <div class="created-at">
